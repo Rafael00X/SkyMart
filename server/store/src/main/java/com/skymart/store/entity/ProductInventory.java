@@ -9,8 +9,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ProductVariationOption {
+public class ProductInventory {
     private Integer id;
-    private String optionName;
-    private Integer productVariationId;
+    private Integer totalStock;
+    private Float unitPrice;
+    private Float totalPrice;
+    private Integer productCombinationId;
 }
