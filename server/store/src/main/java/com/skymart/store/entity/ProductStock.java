@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ProductInventory {
+public class ProductStock {
     private Integer id;
     private Integer totalStock;
     private Float unitPrice;
