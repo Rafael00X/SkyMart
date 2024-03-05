@@ -1,14 +1,12 @@
 package com.skymart.productservice.controller;
 
 import com.skymart.productservice.entity.Product;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController("/products")
 public interface ProductController {
     @PostMapping("/")
-    void createProduct(Product product);
+    void createProduct(@RequestBody Product product);
     @GetMapping("/{id}")
-    Product getProduct(long id);
+    Product getProduct(@RequestParam long id);
 }
